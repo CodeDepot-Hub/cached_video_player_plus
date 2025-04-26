@@ -1,8 +1,7 @@
 // Flutter Packages
-import 'package:flutter/material.dart';
-
 // This Package
 import 'package:cached_video_player_plus/cached_video_player_plus.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     controller = CachedVideoPlayerPlusController.networkUrl(
       Uri.parse(
-        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'http://vjs.zencdn.net/v/oceans.mp4',
       ),
       httpHeaders: {
         'Connection': 'keep-alive',
